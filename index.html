@@ -18,7 +18,8 @@
 </head>
 <body>
     <h1>GS25 반값택배 QR코드 생성기!</h1>
-    <input class = "input" type = "text">
-    <button class = "button-proceed" style = "width: 150px;"><span>생성하기!</span></button>
+    <input id = "GSinput" class = "input" type = "text">
+    <button class = "button-proceed" style = "width: 150px;" onclick = "getGSqr($('#GSinput').val())"><span>생성하기!</span></button>
+    <script src = "./script.js"></script>
 </body>
 </html>
