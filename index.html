@@ -4,7 +4,7 @@
     <meta charset = "UTF-8">
     <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title>반값택배 QR코드 생성기</title>
+    <title>반값택배/끼리택배 QR코드 생성기</title>
     <script type = "text/javascript" src = "https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel = "canonical" href = "https://getbootstrap.com/docs/5.2/examples/carousel/">
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin = "anonymous">
@@ -17,10 +17,13 @@
 
 </head>
 <body>
-    <h1>GS25 반값택배 QR코드 생성기!</h1>
-    <input id = "GSinput" class = "input" type = "text" placeholder = "운송장 번호를 입력하세요.">
-    <button class = "button-proceed" style = "width: 150px;" onclick = "getGSqr($('#GSinput').val())"><span>생성하기!</span></button><br>
-    <p>제작: 홍은표 / 디자인하기 귀찮음 / 문의는 <a href = "https://instagram.com/seoulFixKing">여기로</a></p>
+    <h1>GS25 반값택배/CU 끼리택배 QR코드 생성기!</h1>
+    <input id = "inputnum" class = "input" type = "text" placeholder = "운송장 번호를 입력하세요." style = "width: 100%;"><br>
+    <div style = "width: 100%; text-align: center;">
+        <button class = "button-proceed" style = "width: 100%;" onclick = "getGSqr($('#inputnum').val())"><span>GS25</span></button>
+        <!--<button class = "button-proceed" style = "width: 49%;" onclick = "getCUqr($('#inputnum').val())"><span>CU</span></button><br>-->
+    </div>    
+    <p>제작: 홍은표 / 디자인하기 귀찮음 / 문의는 <a href = "https://instagram.com/seoulFixKing">여기로</a><br>본 사이트에서는 어떠한 개인정보도 수집하지 않습니다.</p>
     <script src = "./script.js"></script>
 </body>
 </html>
